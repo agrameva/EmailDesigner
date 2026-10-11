@@ -1,0 +1,23 @@
+﻿# Auto-detect text files and convert CRLF -> LF on commit for cross-platform consistency
+* text=auto eol=lf
+
+# Force LF for scripts executed on Linux (CI/CD)
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+
+# Explicitly handle Windows batch files with CRLF
+*.bat text eol=crlf
+
+# Binary files — do not modify
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary

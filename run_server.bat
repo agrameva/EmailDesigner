@@ -1,0 +1,6 @@
+@echo off
+echo Starting Email Template Dashboard Server...
+echo Opening dashboard in your default browser...
+start http://localhost:8000
+echo Press Ctrl+C to stop the server.
+python -m http.server 8000
